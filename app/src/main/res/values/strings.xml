@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Sales Team - Hawkers</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="pervious">PREVIOUS</string>
+    <string name="you_are_not_connected_to_any_network">You are not connected to any network</string>
+    <string name="connect">connect</string>
+    <string name="str_phone_number">Phone Number</string>
+    <string name="str_otp_number">Enter OTP Number</string>
+    <string name="str_login">LOGIN</string>
+    <string name="str_Confirm">Confirm</string>
+    <string name="str_forgot_password">Forgot Password</string>
+    <string name="str_i_just_wanna_explore">I JUST WANNA EXPLORE</string>
+    <string name="action_reset">Reset</string>
+    <string name="verification_code_subtext">Please type the verification code sent to +xxxxxxxxxx</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="validate">Validate</string>
+    <string name="menu_profile">Home</string>
+    <string name="menu_total_list">Total User</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_exit">Exit</string>
+    <string name="ent_number">Enter Number</string>
+    <string name="ent_password">Enter Password</string>
+    <string name="designation">Designation</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="login">Login</string>
+    <string name="error_message_number">Please Enter Number</string>
+    <string name="error_message_password">Please Enter Password</string>
+    <string name="success_message">SignIn Successful</string>
+    <string name="number_error">Enter 10 digit mobile number</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="signup">SignUp here?</string>
+    <string name="create_account">Create an account</string>
+    <string name="h_sign">SignUp</string>
+    <string name="str_welcome_to_the_fixer">Welcome to The Fixer</string>
+    <string name="str_add_fixer">Registering</string>
+    <string name="number_landline">Landline Number</string>
+    <string name="str_postal_code">Pin Code</string>
+    <string name="str_shop_information">Shop Details</string>
+    <string name="str_shop_name">Shop Name</string>
+    <string name="str_shop_address">Shop Location</string>
+    <string name="str_shop_phone_number">Alternative Number</string>
+    <string name="landmark">Landmark</string>
+    <string name="str_enter_basic_details">Enter Basic Details</string>
+    <string name="str_upload_image">Capture User Photo</string>
+    <string name="str_fornt_identity_image">Capture Front Side Identity Proof Image</string>
+    <string name="str_back_identity_image">Capture Back Side Identity Proof Image</string>
+    <string name="str_shop_image">Upload Shop Image</string>
+    <string name="str_entr_details">Enter Details</string>
+    <string name="re_password">Confirm Password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="str_number">Mobile Number</string>
+    <string name="str_state">State</string>
+    <string name="str_city">City</string>
+    <string name="str_working_hours">Wroking Hours</string>
+    <string name="str_select_service">Select Service</string>
+    <string name="str_submit">SUBMIT</string>
+    <string name="str_enter_name">Hawker Name *</string>
+    <string name="str_hawker_other_detail">If Other (Fill Detail)</string>
+    <string name="str_address">Address</string>
+    <string name="str_gps_id">GPS ID</string>
+    <string-array name="stepLabels">
+        <item>Basic</item>
+        <item>Shop</item>
+        <item>Categories</item>
+        <item>Upload Image</item>
+    </string-array>
+
+
+    <string-array name="type_arrays">
+        <item>Fixer</item>
+        <item>Moving</item>
+        <item>Hybrid</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_seller_home">SellerHomeActivity</string>
+
+
+    <string name="channel_name">Shekhar</string>
+    <string name="channel_description">Shekhar is a good boy</string>
+    <string name="quickstart_message">Click the SUBSCRIBE TO WEATHER button below to subscribe to the
+        weather topic. Messages sent to the weather topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.
+    </string>
+    <string name="subscribe_to_weather">Subscribe To Weather</string>
+    <string name="log_token">Log Token</string>
+    <string name="msg_subscribed">Subscribed to weather topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string name="ERROR_MSG">Something went wrong ! Please try again.</string>
+    <string name="TIMEOUT_MSG">It took longer than expected to get the response from Server.</string>
+    <string name="N1">You are not connected to any Network.
+        Check Internet Connection</string>
+    <string name="internet">No Internet</string>
+
+
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="pin_label_text">Sit back &amp; Relax! While we verify your mobile number</string>
+    <string name="pin_label_text2">Please enter the 4 digit pin code</string>
+
+    <string name="pin_label_text_hawker">Sit back &amp; Relax! While we verify Hawker mobile number</string>
+    <string name="str_business_contact">Business Contact Mobile Number *</string>
+    <string name="str_business_mobile_number">Business Mobile Number (Optional)</string>
+    <string name="str_gst_number_optional">GST Number(Optional)</string>
+    <string name="str_residential_address">Residential Address *</string>
+    <string name="str_business_name">Business Name *</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="hawker_details">Hawker Details</string>
+    <string name="does_he_she_has_phone">Does He/She has phone?</string>
+    <string name="enter_mobile_model_type">Enter Mobile Model Type</string>
+    <string name="enter_other_business_detail">* Enter other business detail when season off.</string>
+    <string name="did_you_inform_to_hawker_about_help_hawk_number_7827958484">Did you inform to Hawker about Help Hawk number - 7827958484</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_list">Terms &amp; Conditions</string>
+    <string name="error_network_timeout">Timeout Error</string>
+</resources>

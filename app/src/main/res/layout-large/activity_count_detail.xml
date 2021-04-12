@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/ivNav"
+                android:padding="@dimen/dp6"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                android:fontFamily="@font/roboto_bold"/>
+        </RelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_margin="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:backgroundTint="@color/greylight"
+                    android:id="@+id/relative_today_reg_id"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/gray_back"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dp5"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="@dimen/dp5"
+                        android:id="@+id/tv_todayregistartion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Today Registration : 100"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"/>
+                    <TextView
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_below="@+id/tv_todayregistartion"
+                        android:id="@+id/tv_today_verified"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Verified : 70"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"/>
+                    <TextView
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_below="@+id/tv_today_verified"
+                        android:id="@+id/tv_today_unverified"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Un-verified : 30"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relative_total_reg_id"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/white_background"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dp5"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="@dimen/dp5"
+                        android:id="@+id/tv_total_registartion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Total Registration : 100"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"/>
+                    <TextView
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_below="@+id/tv_total_registartion"
+                        android:id="@+id/tv_total_verified"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Verified : 70"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"/>
+                    <TextView
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_below="@+id/tv_total_verified"
+                        android:id="@+id/tv_total_unverified"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Un-verified : 30"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Verified Registration"
+                android:textAllCaps="false"
+                android:id="@+id/btn_verified"
+                android:background="@drawable/verified_shape"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:textAllCaps="false"
+                android:text="Un-Verified Registration"
+                android:id="@+id/btn_unverfied"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/unverified_shape"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_margin="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_hawkerlist"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:id="@+id/tv_notFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There is no record today."
+                android:textSize="@dimen/sp22"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

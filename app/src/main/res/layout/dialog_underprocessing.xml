@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:id="@+id/main_dialog"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/white_background"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/success_text"
+                android:textSize="@dimen/sp20"
+                android:textColor="#3b3b3b"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Account Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:id="@+id/textView_success"
+                android:gravity="center"
+                android:textSize="@dimen/sp12"
+                android:textColor="#3b3b3b"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Your profile is being in under process yet."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <!--Your account is in under processing.-->
+
+        <Button
+                android:id="@+id/close_button"
+                android:textColor="#fff"
+                android:text="OK"
+                android:background="@drawable/app_button_press"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/correct_image"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_processing"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+</RelativeLayout>

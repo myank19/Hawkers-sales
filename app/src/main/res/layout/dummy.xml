@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_dialog"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/success_text"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/str_select_service"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/light_gray"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Time"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To Time"
+                        android:textSize="@dimen/sp15"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btnFromTime"
+                        android:drawablePadding="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="10:00 AM"/>
+                    <Button
+                        android:id="@+id/btnToTime"
+                        android:drawablePadding="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="10:00 PM"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/dp10"
+                android:id="@+id/rvSelectService"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/text_view"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/close_button"
+        android:background="@drawable/app_button_press"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"/>
+
+
+</RelativeLayout>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_dialog"
+        android:layout_height="match_parent">
+        &lt;!&ndash;        android:layout_marginTop="35dp"&ndash;&gt;
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/white_background"
+            android:orientation="vertical"
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/success_text"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/str_select_service"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="From Time"
+                            android:textSize="@dimen/sp15"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To Time"
+                            android:textSize="@dimen/sp15"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btnFromTime"
+                            android:drawablePadding="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:hint="10:00 AM"/>
+                        <Button
+                            android:id="@+id/btnToTime"
+                            android:drawablePadding="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:hint="10:00 PM"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/dp10"
+                    android:id="@+id/rvSelectService"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/text_view"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <Button
+                android:id="@+id/close_button"
+                android:textColor="#fff"
+                android:text="OK"
+                android:background="@drawable/app_button_press"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/correct_image"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_customer_service"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+    </RelativeLayout>-->

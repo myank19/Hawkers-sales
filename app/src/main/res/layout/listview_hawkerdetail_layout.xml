@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/white_background"
+        android:layout_margin="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/Dec/2019"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp11"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shekhar Saini"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_hawker_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1205000345404"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_hawker_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1205000345404"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/llPersonal_info"
+    android:fillViewport="true"
+    android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/gray_light_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/does_he_she_has_phone"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/red_transparent"/>
+
+
+            <RadioGroup
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbSmartYES"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="@dimen/sp13" />
+
+                <RadioButton
+                    android:id="@+id/rbSmartNO"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="@dimen/sp13"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgPhone"
+            android:background="@color/gray_light_more"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbPhoneAndroid"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp13" />
+
+            <RadioButton
+                android:id="@+id/rbPhoneJio"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jio"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp13"/>
+
+            <RadioButton
+                android:id="@+id/rbPhoneOther"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp13"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/greylight">
+            <RadioButton
+                android:id="@+id/rbMoving"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moving"
+                android:checked="true"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp15"/>
+            <RadioButton
+                android:id="@+id/rbFix"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fixed"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp15"/>
+            <RadioButton
+                android:id="@+id/rbHybrid"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hybrid"
+                android:enabled="false"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp15"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greylight">
+            <RadioButton
+                android:id="@+id/rbSeasonal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Festive Season"
+                android:fontFamily="@font/roboto_light"
+                android:enabled="false"
+                android:textSize="@dimen/sp15"/>
+            <RadioButton
+                android:id="@+id/rbTemporary"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offers"
+                android:fontFamily="@font/roboto_light"
+                android:enabled="false"
+                android:textSize="@dimen/sp15"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight=".5"
+            android:background="@drawable/spinner_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spHawkerSubType"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/light_gray"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="@dimen/dp5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:hint="@string/str_hawker_other_detail"
+                android:drawableLeft="@drawable/ic_streer_address"
+                android:inputType="text"
+                android:id="@+id/edt_other_sub_hawker_type"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="@dimen/sp15"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/gray_light_more"
+            android:id="@+id/llFixLayout"
+            android:padding="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is it seasonal ?"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/sp15"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rbSeasonalYes"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="YES"
+                        android:checked="true"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/sp15"/>
+                    <RadioButton
+                        android:id="@+id/rbSeasonalNo"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/sp15"/>
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/light_gray"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="100"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/enter_other_business_detail"
+                    android:drawableLeft="@drawable/ic_streer_address"
+                    android:inputType="text"
+                    android:id="@+id/edt_other_business_detail_id"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="@dimen/sp15"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llDateSelction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnStartDate"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:hint="12/Aug/2019"/>
+                <Button
+                    android:id="@+id/btnEndDate"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:hint="18/Aug/2019"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottomLayout"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/gray_light_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type of Seasonal/ Temporary Hawker"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/colorPrimary" />
+                <RadioGroup
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rbSubMoving"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Moving"
+                        android:checked="true"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/sp15"/>
+                    <RadioButton
+                        android:id="@+id/rbSubFix"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fix"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/sp15"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
